@@ -1,6 +1,7 @@
 import { OnInit, ViewChild, Injectable } from '@angular/core';
 import Swal from 'sweetalert2'
-import { PageEvent,MatPaginator } from '@angular/material/paginator';
+import { PageEvent, MatPaginatorModule } from '@angular/material/paginator';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';;;;;;;;;;;;;;;;;;;;;            
 import { Generic } from '../models/generic';
 import { CommonService } from '../services/common.service';
 
@@ -16,7 +17,7 @@ export abstract class CommonListarComponent<E extends Generic, S extends CommonS
   totalPorPagina = 4;
   pageSizeOptions: number[] = [3, 5, 10, 25, 100];
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatPaginatorModule) paginator: MatPaginatorModule;
 
   constructor(protected service: S) { }
 
@@ -36,11 +37,6 @@ export abstract class CommonListarComponent<E extends Generic, S extends CommonS
       {
         this.lista = p.content as E[];
         this.totalRegistros = p.totalElements as number;
-        //this.paginator._intl.itemsPerPageLabel = 'Registros por página:';
-        //this.paginator._intl.firstPageLabel = 'Primera página';
-        //  this.paginator._intl.lastPageLabel = 'Ultima página';
-        //  this.paginator._intl.nextPageLabel = 'Página siguiente';
-        //  this.paginator._intl.previousPageLabel = 'Página anterior';
       });
   }
 
