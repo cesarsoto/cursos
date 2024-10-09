@@ -4,7 +4,7 @@ import { Alumno } from 'src/app/models/alumno';
 import { AlumnoService } from 'src/app/services/alumno.service';
 import { CommonFormComponent } from '../common-form.component';
 import Swal from 'sweetalert2';
-
+ 
 @Component({
   selector: 'app-alumnos-form',
   templateUrl: './alumnos-form.component.html',
