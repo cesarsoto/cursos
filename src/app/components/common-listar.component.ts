@@ -1,7 +1,7 @@
 import { OnInit, ViewChild, Injectable } from '@angular/core';
 import Swal from 'sweetalert2'
 import { PageEvent, MatPaginatorModule } from '@angular/material/paginator';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';;;;;;;;;;;;;;;;;;;;;            
+//import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { Generic } from '../models/generic';
 import { CommonService } from '../services/common.service';
 

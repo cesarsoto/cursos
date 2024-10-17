@@ -1,7 +1,5 @@
 <div class="mat-elevation-z8">
 
-
-
 <div class="card">
     <div class="card-header">{{titulo}}</div>
     <div class="card-body">
@@ -18,6 +16,7 @@
                     <th>apellido</th>
                     <th>email</th>
                     <th>creado en</th>
+                    <th>exámenes</th>
                     <th>editar</th>
                     <th>eliminar</th>
                 </tr>
@@ -37,6 +36,8 @@
                     <td>{{alumno.apellido}}</td>
                     <td>{{alumno.email}}</td>
                     <td>{{alumno.createAt | date: 'yyyy/MM/dd'}}</td>
+                    <td><button class="btn btn-primary btn-sm"
+                        [routerLink]="['/alumnos/responder-examen', alumno.id]">responder</button></td>
                     <td><button class="btn btn-secondary btn-sm" [routerLink]="['/alumnos/form', alumno.id]">
                             editar
                         </button></td>
