@@ -20,9 +20,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatDialogModule} from '@angular/material/dialog';
 import { AsignarAlumnosComponent } from './components/cursos/asignar-alumnos.component';
 import { AsignarExamenesComponent } from './components/cursos/asignar-examenes.component';
 import { ResponderExamenComponent } from './components/alumnos/responder-examen.component';
+import { ResponderExamenModalComponent } from './components/alumnos/responder-examen-modal.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { ResponderExamenComponent } from './components/alumnos/responder-examen.
     ExamenFormComponent,
     AsignarAlumnosComponent,
     AsignarExamenesComponent,
-    ResponderExamenComponent
+    ResponderExamenComponent,
+    ResponderExamenModalComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { ResponderExamenComponent } from './components/alumnos/responder-examen.
     MatCardModule,
     MatTabsModule,
     MatAutocompleteModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
